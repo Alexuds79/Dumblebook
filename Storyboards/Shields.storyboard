@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EGk-aT-9iE">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Shields-->
+        <scene sceneID="jLi-Jy-Opu">
+            <objects>
+                <viewController id="VeE-od-xpL" customClass="ShieldsViewController" customModule="DumbleBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I2h-qY-nXz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gt8-tJ-FGG">
+                                <rect key="frame" x="16" y="106" width="288" height="258"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKw-7p-AGE">
+                                <rect key="frame" x="120" y="382" width="80" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Qmd-mn-QhT">
+                                <rect key="frame" x="16" y="58" width="288" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <segments>
+                                    <segment title="Gryffindor"/>
+                                    <segment title="Hufflepuff"/>
+                                    <segment title="Ravenclaw"/>
+                                    <segment title="Slytherin"/>
+                                </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="selectedSegmentTintColor" red="0.83254679568527923" green="0.66738270795634635" blue="0.36811861364082882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="houseSelection:" destination="VeE-od-xpL" eventType="valueChanged" id="i1S-Gx-0mH"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Qmd-mn-QhT" firstAttribute="leading" secondItem="skE-kB-YOO" secondAttribute="leading" constant="16" id="0aJ-BD-qY0"/>
+                            <constraint firstItem="skE-kB-YOO" firstAttribute="trailing" secondItem="Gt8-tJ-FGG" secondAttribute="trailing" constant="16" id="NK7-G9-0Sb"/>
+                            <constraint firstItem="Qmd-mn-QhT" firstAttribute="top" secondItem="skE-kB-YOO" secondAttribute="top" constant="14" id="OPJ-rp-a6m"/>
+                            <constraint firstItem="Gt8-tJ-FGG" firstAttribute="top" secondItem="Qmd-mn-QhT" secondAttribute="bottom" constant="17" id="dvb-Rz-T3R"/>
+                            <constraint firstItem="skE-kB-YOO" firstAttribute="bottom" secondItem="gKw-7p-AGE" secondAttribute="bottom" constant="19" id="nl4-ev-ohT"/>
+                            <constraint firstItem="gKw-7p-AGE" firstAttribute="top" secondItem="Gt8-tJ-FGG" secondAttribute="bottom" constant="18" id="rWT-mO-JMv"/>
+                            <constraint firstItem="gKw-7p-AGE" firstAttribute="leading" secondItem="skE-kB-YOO" secondAttribute="leading" constant="120" id="rXL-4n-ISQ"/>
+                            <constraint firstItem="skE-kB-YOO" firstAttribute="trailing" secondItem="gKw-7p-AGE" secondAttribute="trailing" constant="120" id="s5S-iu-or5"/>
+                            <constraint firstItem="Gt8-tJ-FGG" firstAttribute="leading" secondItem="skE-kB-YOO" secondAttribute="leading" constant="16" id="sgd-pL-Bga"/>
+                            <constraint firstItem="skE-kB-YOO" firstAttribute="trailing" secondItem="Qmd-mn-QhT" secondAttribute="trailing" constant="16" id="xJN-i2-1xz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="skE-kB-YOO"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Shields" image="shield.lefthalf.fill" catalog="system" selectedImage="shield.lefthalf.fill" id="VDT-UC-x3M"/>
+                    <navigationItem key="navigationItem" title="Shields" id="Y4I-Q8-6dR"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="shieldImage" destination="Gt8-tJ-FGG" id="REA-cn-lVv"/>
+                        <outlet property="studentsNumberLabel" destination="gKw-7p-AGE" id="h1p-dN-c3H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lDf-tt-2Zu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1254.375" y="115"/>
+        </scene>
+        <!--Shields-->
+        <scene sceneID="pUi-Ax-eg2">
+            <objects>
+                <navigationController title="Shields" id="EGk-aT-9iE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="fcc-9P-QKx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.66865689770000003" green="0.16163343860000001" blue="0.2218073679" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.66865689770000003" green="0.16163343860000001" blue="0.2218073679" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.66865689770000003" green="0.16163343860000001" blue="0.2218073679" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YFQ-b1-fTG">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="VeE-od-xpL" kind="relationship" relationship="rootViewController" id="kod-iA-RUf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hEt-dS-9U9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="115"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="shield.lefthalf.fill" catalog="system" width="64" height="60"/>
+    </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+</document>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PFd-3f-Q7C">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DumbleChat-->
+        <scene sceneID="u00-ad-yjN">
+            <objects>
+                <hostingController title="DumbleChat" id="xyT-T0-BjA" customClass="DumbleChat" customModule="DumbleBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="DumbleBook" id="nF4-cs-QYt"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dy5-Qn-TQM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="195" y="-260"/>
+        </scene>
+        <!--DumbleChat-->
+        <scene sceneID="GCa-rw-PgB">
+            <objects>
+                <navigationController title="DumbleChat" id="PFd-3f-Q7C" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="DumbleChat" image="message.fill" catalog="system" selectedImage="message.fill" id="UR4-xi-ThW"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bzX-69-bGc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xyT-T0-BjA" kind="relationship" relationship="rootViewController" id="MxC-01-RKT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9gi-Ef-jgE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-666" y="-260"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="message.fill" catalog="system" width="64" height="56"/>
+    </resources>
+    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+</document>

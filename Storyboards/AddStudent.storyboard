@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D1M-X5-IFU">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Student View Controller-->
+        <scene sceneID="cQi-Zy-f6K">
+            <objects>
+                <viewController id="H6v-Cq-nBN" customClass="AddStudentViewController" customModule="DumbleBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ecb-AD-NEe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Albus Percival Wulfric Brian" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uve-ZL-D1a">
+                                <rect key="frame" x="57.5" y="95" width="205" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dumbledore" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PVO-tU-DF8">
+                                <rect key="frame" x="106.5" y="176" width="107.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLC-mU-lNj">
+                                <rect key="frame" x="133" y="63" width="55" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surname" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDZ-3U-JNY">
+                                <rect key="frame" x="118" y="144" width="85" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uve-ZL-D1a" firstAttribute="top" secondItem="wLC-mU-lNj" secondAttribute="bottom" constant="8" id="8YC-kC-gyZ"/>
+                            <constraint firstItem="NDZ-3U-JNY" firstAttribute="top" secondItem="uve-ZL-D1a" secondAttribute="bottom" constant="15" id="8qe-L3-19x"/>
+                            <constraint firstItem="fUD-PA-Mdv" firstAttribute="trailing" secondItem="NDZ-3U-JNY" secondAttribute="trailing" constant="117" id="AVW-NX-c4R"/>
+                            <constraint firstItem="wLC-mU-lNj" firstAttribute="top" secondItem="fUD-PA-Mdv" secondAttribute="top" constant="19" id="MNF-Cy-5pi"/>
+                            <constraint firstItem="wLC-mU-lNj" firstAttribute="leading" secondItem="fUD-PA-Mdv" secondAttribute="leading" constant="133" id="ShE-DB-7rP"/>
+                            <constraint firstItem="uve-ZL-D1a" firstAttribute="centerX" secondItem="fUD-PA-Mdv" secondAttribute="centerX" id="UMT-LS-z19"/>
+                            <constraint firstItem="fUD-PA-Mdv" firstAttribute="trailing" secondItem="wLC-mU-lNj" secondAttribute="trailing" constant="132" id="dSa-rg-lfz"/>
+                            <constraint firstItem="PVO-tU-DF8" firstAttribute="centerX" secondItem="fUD-PA-Mdv" secondAttribute="centerX" id="lZ4-Wk-sAD"/>
+                            <constraint firstItem="PVO-tU-DF8" firstAttribute="top" secondItem="NDZ-3U-JNY" secondAttribute="bottom" constant="8" id="r5W-qS-ndw"/>
+                            <constraint firstItem="NDZ-3U-JNY" firstAttribute="leading" secondItem="fUD-PA-Mdv" secondAttribute="leading" constant="118" id="ya6-OG-wZV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fUD-PA-Mdv"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bQC-mo-9R0">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="p9Z-rc-xyk">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1le-gV-nex">
+                                <rect key="frame" x="16" y="7" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <segue destination="pfy-jA-f6u" kind="unwind" unwindAction="unwindToHogwartsViewControllerCancel:" id="Kba-vo-W3N"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="a6q-1Z-9kV">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ty3-Qw-iML">
+                                <rect key="frame" x="258" y="7" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <segue destination="pfy-jA-f6u" kind="unwind" unwindAction="unwindToHogwartsViewControllerSavingChanges:" id="UCG-mG-d18"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="NameTextField" destination="uve-ZL-D1a" id="Neq-Jn-hI6"/>
+                        <outlet property="SurnameTextField" destination="PVO-tU-DF8" id="NlQ-sw-Sbg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zba-A9-GE1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="pfy-jA-f6u" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2648" y="-850"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="anN-UP-0xx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="D1M-X5-IFU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gPy-Sy-ILl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="H6v-Cq-nBN" kind="relationship" relationship="rootViewController" id="0ku-Pi-Qyf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aHB-rF-37K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1839.375" y="-850"/>
+        </scene>
+    </scenes>
+</document>

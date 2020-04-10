@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="peK-dn-xfB">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AddStudent-->
+        <scene sceneID="Y5x-18-4RV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddStudent" id="Lq9-Wu-hbS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qt6-Z8-E5O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830" y="-650"/>
+        </scene>
+        <!--Master-->
+        <scene sceneID="blC-kA-048">
+            <objects>
+                <navigationController title="Master" id="dOQ-ZZ-g3t" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="EF4-3B-el0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.66865689770000003" green="0.16163343860000001" blue="0.2218073679" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VeK-yi-6Pf" kind="relationship" relationship="rootViewController" id="Xt4-UT-IfN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJ0-Lg-Rrl" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-579" y="150"/>
+        </scene>
+        <!--Slytherin-->
+        <scene sceneID="cJj-Bt-MEC">
+            <objects>
+                <splitViewController title="Slytherin" id="peK-dn-xfB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Slytherin" image="SlytherinIcon.png" selectedImage="SlytherinIcon.png" id="MEV-su-myP"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="dOQ-ZZ-g3t" kind="relationship" relationship="masterViewController" id="HcX-Ky-vWq"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cv3-ZF-7nt" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-579" y="-698"/>
+        </scene>
+        <!--Master-->
+        <scene sceneID="sZl-5M-bAG">
+            <objects>
+                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="VeK-yi-6Pf" customClass="HogwartsViewController" customModule="DumbleBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qMS-Sl-R98">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="TZe-Ej-xTo" detailTextLabel="ncv-Yb-ypT" style="IBUITableViewCellStyleSubtitle" id="e5K-ad-f2O">
+                                <rect key="frame" x="0.0" y="28" width="320" height="62.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e5K-ad-f2O" id="fG3-vj-ONV">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="62.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="TZe-Ej-xTo">
+                                            <rect key="frame" x="16" y="12" width="42" height="24"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ncv-Yb-ypT">
+                                            <rect key="frame" x="16" y="36" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <segue destination="eGD-CP-UmF" kind="showDetail" identifier="showDetail" id="uRs-sI-Spc"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="VeK-yi-6Pf" id="eSC-mW-MfD"/>
+                            <outlet property="delegate" destination="VeK-yi-6Pf" id="tyj-Ne-pic"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Slytherin" id="dzF-yu-YXy">
+                        <barButtonItem key="rightBarButtonItem" title="New" id="ahz-bu-8ne">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="Lq9-Wu-hbS" kind="presentation" identifier="Slytherin" id="1Tv-Gc-8lO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c7K-Q1-Cbf" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151.875" y="150"/>
+        </scene>
+        <!--StudentDetail-->
+        <scene sceneID="Qqf-ZT-0IH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StudentDetail" id="eGD-CP-UmF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="iLp-rF-4PF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="65m-z1-kBv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1175" y="200"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SlytherinIcon.png" width="25" height="25"/>
+    </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+</document>

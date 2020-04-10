@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Up9-8b-bhp">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wKu-bg-aTB">
+            <objects>
+                <tabBarController id="Up9-8b-bhp" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bD7-EY-ZvV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.68930132772020725" green="0.16314036498507264" blue="0.12979039530537281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="barTintColor" red="0.66865689766839376" green="0.16163343864028626" blue="0.22180736788145347" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="E4L-7y-pgb" kind="relationship" relationship="viewControllers" destinationCreationSelector="Gryffindor" id="Hjd-Hc-Dew"/>
+                        <segue destination="SUG-Mk-k50" kind="relationship" relationship="viewControllers" destinationCreationSelector="Hufflepuff" id="ces-0i-NdR"/>
+                        <segue destination="Ii0-zE-weX" kind="relationship" relationship="viewControllers" destinationCreationSelector="Ravenclaw" id="LX6-fP-IRx"/>
+                        <segue destination="w4E-Om-iuy" kind="relationship" relationship="viewControllers" destinationCreationSelector="Slytherin" id="Xj6-wc-g78"/>
+                        <segue destination="A04-49-dnD" kind="relationship" relationship="viewControllers" id="vKy-OT-QjC"/>
+                        <segue destination="ysF-KQ-S4u" kind="relationship" relationship="viewControllers" id="epA-Or-4yc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ohf-ub-YTV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1836" y="58"/>
+        </scene>
+        <!--Shields-->
+        <scene sceneID="vRq-wl-Uui">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Shields" id="A04-49-dnD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Shields" image="shield.lefthalf.fill" catalog="system" selectedImage="shield.lefthalf.fill" id="Qii-jv-cne"/>
+                    <navigationItem key="navigationItem" id="rmk-DH-MKu"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m9p-xM-gcg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2183" y="708"/>
+        </scene>
+        <!--DumbleChat-->
+        <scene sceneID="gnB-aJ-r6N">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DumbleChat" id="ysF-KQ-S4u" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="DumbleChat" image="message.fill" catalog="system" selectedImage="message.fill" id="Nkc-Ve-xDg"/>
+                    <navigationItem key="navigationItem" id="frN-22-8lT"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bpV-9i-2ge" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1505" y="708"/>
+        </scene>
+        <!--Hufflepuff-->
+        <scene sceneID="dZA-Qa-gFU">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Hufflepuff" storyboardName="Hufflepuff" id="SUG-Mk-k50" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Hufflepuff" image="HufflepuffIcon.png" selectedImage="HufflepuffIcon.png" id="sag-fH-hJU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bid-zA-xPB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-565" y="-121"/>
+        </scene>
+        <!--Ravenclaw-->
+        <scene sceneID="d3S-MG-AVC">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Ravenclaw" storyboardName="Ravenclaw" id="Ii0-zE-weX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Ravenclaw" image="RavenclawIcon.png" selectedImage="RavenclawIcon.png" id="XUm-m6-mfA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1nu-uz-YRf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-565" y="108"/>
+        </scene>
+        <!--Slytherin-->
+        <scene sceneID="eUW-IP-5Te">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Slytherin" storyboardName="Slytherin" id="w4E-Om-iuy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Slytherin" image="SlytherinIcon.png" selectedImage="SlytherinIcon.png" id="CBN-fz-v0d"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PpW-ff-1fm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-565" y="325"/>
+        </scene>
+        <!--Gryffindor-->
+        <scene sceneID="M07-Jd-yC0">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Gryffindor" storyboardName="Gryffindor" id="E4L-7y-pgb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Gryffindor" image="GryffindorIcon.png" selectedImage="GryffindorIcon.png" id="rHA-dQ-d75">
+                        <inset key="landscapeImageInsets" minX="0.0" minY="14" maxX="0.0" maxY="0.0"/>
+                        <color key="badgeColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qkP-8s-TS7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-565" y="-325"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GryffindorIcon.png" width="25" height="25"/>
+        <image name="HufflepuffIcon.png" width="25" height="25"/>
+        <image name="RavenclawIcon.png" width="25" height="25"/>
+        <image name="SlytherinIcon.png" width="25" height="25"/>
+        <image name="message.fill" catalog="system" width="64" height="56"/>
+        <image name="shield.lefthalf.fill" catalog="system" width="64" height="60"/>
+    </resources>
+    <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>

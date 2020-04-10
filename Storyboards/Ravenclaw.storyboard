@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ccg-ej-EbI">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AddStudent-->
+        <scene sceneID="Ihi-dq-ug2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddStudent" id="pYW-Pz-3W6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V2h-88-Vlz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830" y="-650"/>
+        </scene>
+        <!--Master-->
+        <scene sceneID="9fu-eI-pHu">
+            <objects>
+                <navigationController title="Master" id="p4Z-7n-c1y" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="I6t-DX-Zy6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.66865689770000003" green="0.16163343860000001" blue="0.2218073679" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BEJ-cJ-wud" kind="relationship" relationship="rootViewController" id="doi-Yn-Vd4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GQr-cC-Byu" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-579" y="150"/>
+        </scene>
+        <!--Ravenclaw-->
+        <scene sceneID="Ovp-AN-0mE">
+            <objects>
+                <splitViewController title="Ravenclaw" id="Ccg-ej-EbI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Ravenclaw" image="RavenclawIcon.png" selectedImage="RavenclawIcon.png" id="Lg9-m8-9Cz"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="p4Z-7n-c1y" kind="relationship" relationship="masterViewController" id="RvO-0W-YUc"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rfv-0Q-BOc" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-579" y="-698"/>
+        </scene>
+        <!--Master-->
+        <scene sceneID="DbI-Ih-Y0h">
+            <objects>
+                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="BEJ-cJ-wud" customClass="HogwartsViewController" customModule="DumbleBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Hg0-JR-XMa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="km3-Jd-Tzl" detailTextLabel="RyM-sR-lPp" style="IBUITableViewCellStyleSubtitle" id="WqG-ta-e80">
+                                <rect key="frame" x="0.0" y="28" width="320" height="62.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WqG-ta-e80" id="ENc-gS-wP6">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="62.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="km3-Jd-Tzl">
+                                            <rect key="frame" x="16" y="12" width="42" height="24"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RyM-sR-lPp">
+                                            <rect key="frame" x="16" y="36" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <segue destination="gTt-no-4yp" kind="showDetail" identifier="showDetail" id="exK-Sz-0wd"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="BEJ-cJ-wud" id="piX-8Z-BYS"/>
+                            <outlet property="delegate" destination="BEJ-cJ-wud" id="fdQ-nP-uBN"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Ravenclaw" id="NT8-76-JT2">
+                        <barButtonItem key="rightBarButtonItem" title="New" id="4QF-0w-36f">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="pYW-Pz-3W6" kind="presentation" identifier="Ravenclaw" id="dSX-dP-PMY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A3z-Mn-2TQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151.875" y="150"/>
+        </scene>
+        <!--StudentDetail-->
+        <scene sceneID="Sav-ac-vPv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StudentDetail" id="gTt-no-4yp" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="egv-Yd-eWA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lDV-ee-IPp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1175" y="200"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RavenclawIcon.png" width="25" height="25"/>
+    </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+</document>
